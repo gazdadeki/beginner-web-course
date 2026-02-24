@@ -1,0 +1,78 @@
+/* ===============================
+   BASE
+================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.box {
+    padding: 20px;
+    margin: 15px 0;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+
+
+/* ===============================
+   1. ELEMENT vs CLASS
+   Class wins
+================================= */
+
+div.element-class-demo {
+    background-color: gray;
+}
+
+.element-class-demo {
+    background-color: lightblue;
+}
+
+
+
+/* ===============================
+   2. CLASS vs ID
+   ID wins
+================================= */
+
+.class-demo {
+    background-color: orange;
+}
+
+#id-demo {
+    background-color: red;
+    color: white;
+}
+
+
+
+/* ===============================
+   3. ID vs !important
+   !important wins
+================================= */
+
+#important-demo {
+    background-color: purple;
+    color: white;
+}
+
+.important-class {
+    background-color: green !important;
+    color: white;
+}
+
+
+
+/* ===============================
+   4. ORDER (same specificity)
+   Last wins
+================================= */
+
+.order-demo {
+    background-color: gray;
+}
+
+.order-demo {
+    background-color: pink;
+}

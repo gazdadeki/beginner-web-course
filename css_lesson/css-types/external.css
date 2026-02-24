@@ -1,0 +1,10 @@
+.external-box {
+    background-color: lightblue;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid blue;
+}
+
+.external-title {
+    color: darkblue;
+}

@@ -1,0 +1,314 @@
+/* ===============================
+   GLOBAL STYLES
+================================= */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+}
+
+.header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.demo-row {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.box {
+    background: #ddd;
+    padding: 20px;
+    border: 2px solid #333;
+    text-align: center;
+}
+
+
+
+/* ===============================
+   1. SIZE & SPACING
+================================= */
+
+.size-small {
+    width: 80px;
+    height: 80px;
+}
+
+.size-medium {
+    width: 120px;
+    height: 120px;
+}
+
+.size-large {
+    width: 160px;
+    height: 160px;
+}
+
+.padding-example {
+    padding: 40px;
+    background-color: lightblue;
+}
+
+.margin-example {
+    margin: 40px;
+    background-color: lightcoral;
+}
+
+
+
+/* ===============================
+   2. COLORS & BACKGROUND
+================================= */
+
+.bg-color {
+    background-color: steelblue;
+    color: white;
+}
+
+.bg-gradient {
+    background: linear-gradient(45deg, purple, pink);
+    color: white;
+}
+
+.opacity-box {
+    background-color: green;
+    color: white;
+    opacity: 0.6;
+}
+
+
+
+/* ===============================
+   3. TYPOGRAPHY
+================================= */
+
+.font-small {
+    font-size: 14px;
+}
+
+.font-medium {
+    font-size: 20px;
+}
+
+.font-large {
+    font-size: 28px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-spacing {
+    letter-spacing: 3px;
+    line-height: 1.6;
+}
+
+
+
+/* ===============================
+   4. DISPLAY
+================================= */
+
+.display-block {
+    display: block;
+    background: lightgreen;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.display-inline {
+    display: inline;
+    background: orange;
+    padding: 5px;
+}
+
+.display-inline-block {
+    display: inline-block;
+    background: tomato;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+
+/* ===============================
+   5. FLEXBOX
+================================= */
+
+.flex-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background: #eee;
+    margin-bottom: 20px;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    background: #eee;
+    padding: 10px;
+}
+
+.flex-item {
+    background: royalblue;
+    color: white;
+    padding: 20px;
+}
+
+
+
+/* ===============================
+   6. GRID
+================================= */
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-item {
+    background: mediumseagreen;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* ===============================
+   7. POSITION
+================================= */
+
+.position-static {
+    position: static;
+    background: lightgray;
+    margin-bottom: 20px;
+}
+
+.relative-parent {
+    position: relative;
+    height: 150px;
+    background: #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.absolute-child {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    padding: 10px;
+}
+
+.fixed-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+.sticky-box {
+    position: sticky;
+    top: 0;
+    background: orange;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+
+
+/* ===============================
+   8. VISUAL EFFECTS
+================================= */
+
+.radius-box {
+    border-radius: 15px;
+    background: lightblue;
+}
+
+.shadow-box {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    background: white;
+}
+
+.transform-box {
+    background: purple;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.transform-box:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+
+
+/* ===============================
+   9. INTERACTION
+================================= */
+
+.btn-hover {
+    background: royalblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-hover:hover {
+    background: darkblue;
+}
+
+.btn-transition {
+    background: green;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-transition:hover {
+    transform: scale(1.1);
+}

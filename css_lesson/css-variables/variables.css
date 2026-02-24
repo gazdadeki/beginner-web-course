@@ -1,0 +1,112 @@
+/* ===============================
+   GLOBAL VARIABLES
+   Defined inside :root
+================================= */
+
+:root {
+    --primary-color: royalblue;
+    --secondary-color: gray;
+    --text-color: white;
+
+    --spacing: 20px;
+    --border-radius: 10px;
+
+    --font-size: 16px;
+}
+
+
+
+/* ===============================
+   BASE STYLES
+================================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size);
+}
+
+.header,
+.footer {
+    background: #222;
+    color: white;
+    padding: var(--spacing);
+    text-align: center;
+}
+
+.section {
+    padding: var(--spacing);
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+/* ===============================
+   USING VARIABLES
+================================= */
+
+.card {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: var(--spacing);
+    border-radius: var(--border-radius);
+    margin: 10px 0;
+}
+
+.box {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: var(--spacing);
+    margin: 10px 0;
+}
+
+
+
+/* ===============================
+   LOCAL VARIABLES (SCOPE)
+================================= */
+
+.local-scope {
+    --primary-color: crimson; /* overrides only here */
+}
+
+
+
+/* ===============================
+   FALLBACK VALUES
+================================= */
+
+.fallback-example {
+    background: var(--unknown-color, orange);
+}
+
+
+/* ===============================
+   REAL WORLD BUTTON
+================================= */
+
+.btn {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn.secondary {
+    background: var(--secondary-color);
+}
+
+
+
+/* ===============================
+   THEME OVERRIDE
+================================= */
+
+.dark-theme {
+    --primary-color: black;
+    --text-color: white;
+    background: #333;
+}

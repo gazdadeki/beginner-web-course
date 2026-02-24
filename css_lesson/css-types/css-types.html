@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 Ways to Use CSS</title>
+
+    <!-- ================= INTERNAL CSS ================= -->
+    <style>
+      .internal-box {
+        background-color: lightgreen;
+        padding: 15px;
+        margin: 10px 0;
+        border: 2px solid green;
+      }
+
+      .internal-title {
+        color: green;
+      }
+    </style>
+
+    <!-- ================= EXTERNAL CSS ================= -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>3 Ways to Use CSS</h1>
+
+    <!-- ================= INLINE CSS ================= -->
+    <section>
+      <h2>1. Inline CSS</h2>
+
+      <div
+        style="
+          background-color: lightcoral;
+          padding: 15px;
+          border: 2px solid red;
+        "
+      >
+        <h3 style="color: darkred">This is Inline CSS</h3>
+        <p style="color: white">
+          Styles are applied directly inside HTML elements using the style
+          attribute.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= INTERNAL CSS ================= -->
+    <section>
+      <h2>2. Internal CSS</h2>
+
+      <div class="internal-box">
+        <h3 class="internal-title">This is Internal CSS</h3>
+        <p>Styles are written inside the &lt;style&gt; tag in the HTML file.</p>
+      </div>
+    </section>
+
+    <!-- ================= EXTERNAL CSS ================= -->
+    <section>
+      <h2>3. External CSS (Best Practice)</h2>
+
+      <div class="external-box">
+        <h3 class="external-title">This is External CSS</h3>
+        <p>Styles are written in a separate CSS file and linked to HTML.</p>
+      </div>
+    </section>
+  </body>
+</html>
