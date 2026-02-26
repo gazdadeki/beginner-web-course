@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Priority</title>
+
+    <link rel="stylesheet" href="priorities.css">
+</head>
+
+<body>
+
+    <h1>CSS Selector Priority Demonstration</h1>
+
+
+    <!-- ================= ELEMENT VS CLASS ================= -->
+
+    <section>
+        <h2>1. Element vs Class</h2>
+
+        <div class="box element-class-demo">
+            Class selector overrides element selector
+        </div>
+    </section>
+
+
+
+    <!-- ================= CLASS VS ID ================= -->
+
+    <section>
+        <h2>2. Class vs ID</h2>
+
+        <div id="id-demo" class="box class-demo">
+            ID selector overrides class selector
+        </div>
+    </section>
+
+
+
+    <!-- ================= ID VS IMPORTANT ================= -->
+
+    <section>
+        <h2>3. ID vs !important</h2>
+
+        <div id="important-demo" class="box important-class">
+            !important overrides ID selector
+        </div>
+    </section>
+
+
+
+    <!-- ================= ORDER ================= -->
+
+    <section>
+        <h2>4. Order (Last Rule Wins)</h2>
+
+        <div class="box order-demo">
+            Last declared rule wins when specificity is equal
+        </div>
+    </section>
+
+
+
+</body>
+</html>

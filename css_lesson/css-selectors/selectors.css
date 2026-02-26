@@ -1,0 +1,16 @@
+.class-selector {
+    color: red;
+    font-size: 16px;
+}
+
+#id-selector {
+    font-size: 12px;
+}
+
+.id-selector {
+    font-size: 80px;
+}
+
+p {
+    font-size: 80px;
+}

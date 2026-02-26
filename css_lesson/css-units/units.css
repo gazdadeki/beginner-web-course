@@ -1,0 +1,164 @@
+/* ===============================
+   GLOBAL STYLES
+================================= */
+
+/* Root font size for rem demonstration */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.header,
+.footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.section {
+    padding: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.box {
+    background: lightblue;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+
+
+/* ===============================
+   1. ABSOLUTE UNITS
+   Fixed physical sizes
+================================= */
+
+.px-box {
+    width: 200px; /* pixels */
+}
+
+.cm-box {
+    width: 5cm; /* centimeters */
+}
+
+.mm-box {
+    width: 50mm; /* millimeters */
+}
+
+.inch-box {
+    width: 2in; /* inches */
+}
+
+.pt-box {
+    font-size: 20pt; /* points */
+}
+
+.pc-box {
+    font-size: 2pc; /* picas */
+}
+
+
+
+/* ===============================
+   2. PERCENTAGE
+   Relative to parent
+================================= */
+
+.parent {
+    width: 400px;
+    background: #eee;
+    padding: 20px;
+}
+
+.child-percent {
+    width: 50%; /* 50% of parent width */
+    background: orange;
+    padding: 10px;
+}
+
+
+
+/* ===============================
+   3. EM vs REM
+================================= */
+
+.em-parent {
+    font-size: 20px;
+    background: #eee;
+    padding: 20px;
+}
+
+.em-child {
+    font-size: 2em; /* 2 × parent font size */
+    background: coral;
+}
+
+.rem-box {
+    font-size: 2rem; /* 2 × root html font size */
+    background: purple;
+    color: white;
+    padding: 10px;
+}
+
+
+
+/* ===============================
+   4. VIEWPORT UNITS
+   Relative to screen size
+================================= */
+
+.vw-box {
+    width: 50vw; /* 50% of viewport width */
+    background: green;
+    color: white;
+    padding: 10px;
+}
+
+.vh-box {
+    height: 30vh; /* 30% of viewport height */
+    background: teal;
+    color: white;
+    padding: 10px;
+}
+
+.vmin-box {
+    width: 20vmin;
+    background: crimson;
+    color: white;
+    padding: 10px;
+}
+
+.vmax-box {
+    width: 20vmax;
+    background: navy;
+    color: white;
+    padding: 10px;
+}
+
+
+
+/* ===============================
+   5. REAL WORLD EXAMPLE
+================================= */
+
+.card {
+    width: 60%;          /* responsive width */
+    max-width: 400px;    /* prevents too large */
+    margin: auto;
+    padding: 1.5rem;     /* scalable spacing */
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+}

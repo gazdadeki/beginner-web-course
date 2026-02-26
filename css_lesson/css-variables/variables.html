@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Demo</title>
+
+```
+<link rel="stylesheet" href="variables.css">
+```
+
+</head>
+
+<body>
+
+<header class="header">
+    <h1>CSS Variables (Custom Properties)</h1>
+    <p>How variables are defined and used</p>
+</header>
+
+<!-- ================= GLOBAL VARIABLES ================= -->
+
+<section class="section">
+    <h2>1. Global Variables (:root)</h2>
+
+```
+<div class="card">
+    This card uses global variables for colors, spacing and font size.
+</div>
+```
+
+</section>
+
+<!-- ================= LOCAL VARIABLES ================= -->
+
+<section class="section">
+    <h2>2. Local Variables (Scoped to Element)</h2>
+
+```
+<div class="box local-scope">
+    This box overrides the primary color locally.
+</div>
+```
+
+</section>
+
+<!-- ================= FALLBACK VALUES ================= -->
+
+<section class="section">
+    <h2>3. Fallback Values</h2>
+
+```
+<div class="box fallback-example">
+    If variable doesn't exist → fallback value is used.
+</div>
+```
+
+</section>
+
+<!-- ================= REAL WORLD BUTTON ================= -->
+
+<section class="section">
+    <h2>4. Real World Example</h2>
+
+```
+<button class="btn">Primary Button</button>
+<button class="btn secondary">Secondary Button</button>
+```
+
+</section>
+
+<!-- ================= THEME SWITCH EXAMPLE ================= -->
+
+<section class="section dark-theme">
+    <h2>5. Theme Example (Variable Override)</h2>
+
+```
+<div class="card">
+    This section overrides variables to simulate a dark theme.
+</div>
+```
+
+</section>
+
+<footer class="footer">
+    CSS Variables Demo
+</footer>
+
+</body>
+</html>

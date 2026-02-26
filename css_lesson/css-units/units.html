@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units Demonstration</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="units.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>CSS Units Demonstration</h1>
+    <p>Absolute vs Relative Units</p>
+</header>
+
+
+<!-- ================= ABSOLUTE UNITS ================= -->
+
+<section class="section">
+    <h2>1. Absolute Units</h2>
+
+    <div class="box px-box">Width: 200px</div>
+    <div class="box cm-box">Width: 5cm</div>
+    <div class="box mm-box">Width: 50mm</div>
+    <div class="box inch-box">Width: 2in</div>
+    <div class="box pt-box">Font: 20pt</div>
+    <div class="box pc-box">Font: 2pc</div>
+</section>
+
+
+
+<!-- ================= PERCENTAGE ================= -->
+
+<section class="section">
+    <h2>2. Percentage (%)</h2>
+
+    <div class="parent">
+        Parent (400px width)
+
+        <div class="child-percent">
+            Child width: 50%
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ================= EM vs REM ================= -->
+
+<section class="section">
+    <h2>3. em vs rem</h2>
+
+    <div class="em-parent">
+        Parent font-size: 20px
+
+        <div class="em-child">
+            2em (relative to parent)
+        </div>
+    </div>
+
+    <div class="rem-box">
+        2rem (relative to root html)
+    </div>
+</section>
+
+
+
+<!-- ================= VIEWPORT UNITS ================= -->
+
+<section class="section">
+    <h2>4. Viewport Units</h2>
+
+    <div class="vw-box">50vw</div>
+    <div class="vh-box">30vh</div>
+    <div class="vmin-box">20vmin</div>
+    <div class="vmax-box">20vmax</div>
+</section>
+
+
+
+<!-- ================= PRACTICAL EXAMPLE ================= -->
+
+<section class="section">
+    <h2>5. Real World Example</h2>
+
+    <div class="card">
+        <h3>Responsive Card</h3>
+        <p>
+            This card uses rem for typography and % for width.
+        </p>
+    </div>
+</section>
+
+
+
+<footer class="footer">
+    CSS Units Demo
+</footer>
+
+</body>
+</html>
