@@ -71,7 +71,12 @@ body {
     background-color: lightcoral;
 }
 
-
+.variable-sizes {
+    width: 400px;
+    max-width: 200px;
+    height: 500px;
+    max-height: 300px;
+}
 
 /* ===============================
    2. COLORS & BACKGROUND

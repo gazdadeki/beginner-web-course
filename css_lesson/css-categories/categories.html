@@ -1,186 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Categories Showcase</title>
 
-```
-<link rel="stylesheet" href="categories.css">
-```
+    ```
+    <link rel="stylesheet" href="categories.css" />
+    ```
+  </head>
 
-</head>
+  <body>
+    <header class="header">
+      <h1 class="main-title">CSS Categories Every Developer Should Know</h1>
+      <p class="subtitle">Practical Examples</p>
+    </header>
 
-<body>
+    <!-- ================= SIZE & SPACING ================= -->
 
-<header class="header">
-    <h1 class="main-title">CSS Categories Every Developer Should Know</h1>
-    <p class="subtitle">Practical Examples</p>
-</header>
+    <section class="section">
+      <h2>1. Size and Spacing</h2>
 
-<!-- ================= SIZE & SPACING ================= -->
+      ```
+      <div class="demo-row">
+        <div class="box size-small">Small</div>
+        <div class="box size-medium">Medium</div>
+        <div class="box size-large">Large</div>
+        <div class="box variable-sizes">Variable sizes</div>
+      </div>
 
-<section class="section">
-    <h2>1. Size and Spacing</h2>
+      <div class="demo-row">
+        <div class="box padding-example">Padding</div>
+        <div class="box margin-example">Margin</div>
+      </div>
+      ```
+    </section>
 
-```
-<div class="demo-row">
-    <div class="box size-small">Small</div>
-    <div class="box size-medium">Medium</div>
-    <div class="box size-large">Large</div>
-</div>
+    <!-- ================= COLORS & BACKGROUND ================= -->
 
-<div class="demo-row">
-    <div class="box padding-example">Padding</div>
-    <div class="box margin-example">Margin</div>
-</div>
-```
+    <section class="section">
+      <h2>2. Colors and Background</h2>
 
-</section>
+      ```
+      <div class="demo-row">
+        <div class="box bg-color">Background Color</div>
+        <div class="box bg-gradient">Gradient</div>
+        <div class="box opacity-box">Opacity</div>
+      </div>
+      ```
+    </section>
 
-<!-- ================= COLORS & BACKGROUND ================= -->
+    <!-- ================= TYPOGRAPHY ================= -->
 
-<section class="section">
-    <h2>2. Colors and Background</h2>
+    <section class="section">
+      <h2>3. Typography</h2>
 
-```
-<div class="demo-row">
-    <div class="box bg-color">Background Color</div>
-    <div class="box bg-gradient">Gradient</div>
-    <div class="box opacity-box">Opacity</div>
-</div>
-```
+      ```
+      <p class="font-small">Small Text</p>
+      <p class="font-medium">Medium Text</p>
+      <p class="font-large">Large Text</p>
 
-</section>
+      <p class="text-bold">Bold Text</p>
+      <p class="text-center">Centered Text</p>
+      <p class="text-spacing">Letter Spacing Example</p>
+      ```
+    </section>
 
-<!-- ================= TYPOGRAPHY ================= -->
+    <!-- ================= DISPLAY ================= -->
 
-<section class="section">
-    <h2>3. Typography</h2>
+    <section class="section">
+      <h2>4. Display Types</h2>
 
-```
-<p class="font-small">Small Text</p>
-<p class="font-medium">Medium Text</p>
-<p class="font-large">Large Text</p>
+      ```
+      <div class="display-block">Block</div>
+      <span class="display-inline">Inline</span>
+      <span class="display-inline">Inline</span>
 
-<p class="text-bold">Bold Text</p>
-<p class="text-center">Centered Text</p>
-<p class="text-spacing">Letter Spacing Example</p>
-```
+      <div class="display-inline-block">Inline Block</div>
+      <div class="display-inline-block">Inline Block</div>
+      ```
+    </section>
 
-</section>
+    <!-- ================= FLEXBOX ================= -->
 
-<!-- ================= DISPLAY ================= -->
+    <section class="section">
+      <h2>5. Flexbox</h2>
 
-<section class="section">
-    <h2>4. Display Types</h2>
+      ```
+      <div class="flex-row">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+      </div>
 
-```
-<div class="display-block">Block</div>
-<span class="display-inline">Inline</span>
-<span class="display-inline">Inline</span>
+      <div class="flex-center">
+        <div class="flex-item">Centered</div>
+      </div>
 
-<div class="display-inline-block">Inline Block</div>
-<div class="display-inline-block">Inline Block</div>
-```
+      <div class="flex-space">
+        <div class="flex-item">A</div>
+        <div class="flex-item">B</div>
+        <div class="flex-item">C</div>
+      </div>
+      ```
+    </section>
 
-</section>
+    <!-- ================= GRID ================= -->
 
-<!-- ================= FLEXBOX ================= -->
+    <section class="section">
+      <h2>6. Grid</h2>
 
-<section class="section">
-    <h2>5. Flexbox</h2>
+      ```
+      <div class="grid-2">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+      </div>
 
-```
-<div class="flex-row">
-    <div class="flex-item">1</div>
-    <div class="flex-item">2</div>
-    <div class="flex-item">3</div>
-</div>
+      <div class="grid-3">
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+      </div>
+      ```
+    </section>
 
-<div class="flex-center">
-    <div class="flex-item">Centered</div>
-</div>
+    <!-- ================= POSITION ================= -->
 
-<div class="flex-space">
-    <div class="flex-item">A</div>
-    <div class="flex-item">B</div>
-    <div class="flex-item">C</div>
-</div>
-```
+    <section class="section">
+      <h2>7. Position</h2>
 
-</section>
+      ```
+      <div class="position-static box">Static</div>
 
-<!-- ================= GRID ================= -->
+      <div class="relative-parent">
+        Relative Parent
+        <div class="absolute-child">Absolute</div>
+      </div>
 
-<section class="section">
-    <h2>6. Grid</h2>
+      <div class="fixed-box">Fixed</div>
 
-```
-<div class="grid-2">
-    <div class="grid-item">1</div>
-    <div class="grid-item">2</div>
-</div>
+      <div class="sticky-box">Sticky</div>
+      ```
+    </section>
 
-<div class="grid-3">
-    <div class="grid-item">A</div>
-    <div class="grid-item">B</div>
-    <div class="grid-item">C</div>
-</div>
-```
+    <!-- ================= EFFECTS ================= -->
 
-</section>
+    <section class="section">
+      <h2>8. Visual Effects</h2>
 
-<!-- ================= POSITION ================= -->
+      ```
+      <div class="box radius-box">Border Radius</div>
+      <div class="box shadow-box">Shadow</div>
+      <div class="box transform-box">Transform</div>
+      ```
+    </section>
 
-<section class="section">
-    <h2>7. Position</h2>
+    <!-- ================= INTERACTION ================= -->
 
-```
-<div class="position-static box">Static</div>
+    <section class="section">
+      <h2>9. Interaction</h2>
 
-<div class="relative-parent">
-    Relative Parent
-    <div class="absolute-child">Absolute</div>
-</div>
+      ```
+      <button class="btn-hover">Hover</button>
+      <button class="btn-transition">Transition</button>
+      ```
+    </section>
 
-<div class="fixed-box">Fixed</div>
-
-<div class="sticky-box">Sticky</div>
-```
-
-</section>
-
-<!-- ================= EFFECTS ================= -->
-
-<section class="section">
-    <h2>8. Visual Effects</h2>
-
-```
-<div class="box radius-box">Border Radius</div>
-<div class="box shadow-box">Shadow</div>
-<div class="box transform-box">Transform</div>
-```
-
-</section>
-
-<!-- ================= INTERACTION ================= -->
-
-<section class="section">
-    <h2>9. Interaction</h2>
-
-```
-<button class="btn-hover">Hover</button>
-<button class="btn-transition">Transition</button>
-```
-
-</section>
-
-<footer class="footer">
-    <p>CSS Learning Demo</p>
-</footer>
-
-</body>
+    <footer class="footer">
+      <p>CSS Learning Demo</p>
+    </footer>
+  </body>
 </html>
