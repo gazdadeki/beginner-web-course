@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f6f8;
+    box-sizing: border-box;
 }
 
 .header {
@@ -78,6 +79,40 @@ body {
     max-height: 300px;
 }
 
+.container-box {
+    width: 600px;
+    height: 600px;
+    background-color: cadetblue;
+    position: relative;
+}
+
+.mini-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-box:nth-of-type(3) {
+    width: 120px;
+    height: 120px;
+    background-color: red;
+}
+
+.mini-box:nth-of-type(2) {
+    width: 160px;
+    height: 160px;
+    background-color: blue;
+}
+
+.mini-box:nth-of-type(1) {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
 /* ===============================
    2. COLORS & BACKGROUND
 ================================= */
@@ -88,13 +123,13 @@ body {
 }
 
 .bg-gradient {
-    background: linear-gradient(45deg, purple, pink);
+    background: linear-gradient(90deg, purple, blue);
     color: white;
 }
 
 .opacity-box {
-    background-color: green;
-    color: white;
+    background-color: blue;
+    color: red;
     opacity: 0.6;
 }
 
@@ -125,8 +160,9 @@ body {
 }
 
 .text-spacing {
-    letter-spacing: 3px;
+    letter-spacing: 12px;
     line-height: 1.6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -151,8 +187,6 @@ body {
 .display-inline-block {
     display: inline-block;
     background: tomato;
-    padding: 10px;
-    margin-top: 10px;
 }
 
 
@@ -189,6 +223,67 @@ body {
     padding: 20px;
 }
 
+.five-column-flex {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.flex-box {
+    width: 120px;
+    height: 120px;
+    background-color: #ddd;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box:nth-of-type(1) {
+    width: 100%;
+}
+
+.flex-box:nth-of-type(2) {
+    width: calc(50% - 10px);
+}
+
+.flex-box:nth-of-type(3) {
+    width: 50%;
+}
+
+.flex-box:nth-of-type(4), .flex-box:nth-of-type(5), .flex-box:nth-of-type(6)   {
+    width: 20%;
+}
+
+.flex-justify-between {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: flex-start;
+    background-color: #333;
+    opacity: 0.7;
+    padding: 20px 80px;
+    box-sizing: border-box;
+}
+
+.flex-between {
+    width: 200px;
+    height: 160px;
+    background-color: lightblue;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* ===============================
@@ -197,7 +292,7 @@ body {
 
 .grid-2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 10px;
     margin-bottom: 20px;
 }
@@ -237,11 +332,29 @@ body {
 
 .absolute-child {
     position: absolute;
-    top: 10px;
-    right: 10px;
     background: red;
     color: white;
     padding: 10px;
+}
+
+.absolute-child:nth-of-type(1) {
+    top: 10px;
+    right: 10px;
+}
+
+.absolute-child:nth-of-type(2) {
+    top: 10px;
+    left: 10px;
+}
+
+.absolute-child:nth-of-type(3) {
+    bottom: 10px;
+    right: 10px;
+}
+
+.absolute-child:nth-of-type(4) {
+    bottom: 10px;
+    left: 10px;
 }
 
 .fixed-box {
@@ -268,13 +381,33 @@ body {
 ================================= */
 
 .radius-box {
-    border-radius: 15px;
-    background: lightblue;
+    color:  white;
+    background: rgb(0,0,0);
+    opacity: 0.5;
+    /* border-top: 3px solid #333;
+    border-bottom: 3px solid yellow;
+    border-right: 3px solid red;
+    border-left: 3px dotted green */
+    border: 3px solid green;
+    border-radius: 16px;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.radius-box:active {
+    background-color: blue;
 }
 
 .shadow-box {
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    background: white;
+    /* background: white; */
 }
 
 .transform-box {
@@ -286,8 +419,6 @@ body {
 .transform-box:hover {
     transform: scale(1.1) rotate(5deg);
 }
-
-
 
 /* ===============================
    9. INTERACTION
